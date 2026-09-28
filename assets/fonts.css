@@ -1,0 +1,7 @@
+/* Schriften lokal ausgeliefert (SIL Open Font License, siehe OFL-*.txt) – keine Anfragen an Google */
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/atkinson-regular.woff) format('woff')}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/atkinson-bold.woff) format('woff')}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:italic;font-weight:400;font-display:swap;src:url(fonts/atkinson-italic.woff) format('woff')}
+@font-face{font-family:'Literata';font-style:normal;font-weight:200 900;font-display:swap;src:url(fonts/literata.woff) format('woff')}
+@font-face{font-family:'Literata';font-style:italic;font-weight:200 900;font-display:swap;src:url(fonts/literata-italic.woff) format('woff')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url(fonts/jetbrainsmono.woff) format('woff')}

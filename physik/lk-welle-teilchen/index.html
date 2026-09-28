@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mint-interaktiv · Anmeldung</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--bg:#F7F8FA;--surface:#fff;--ink:#1B2230;--muted:#5B6475;--line:#D9DDE5;--accent:#6B3FA0;--bad:#c2332b;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#12151C;--surface:#1A1F29;--ink:#E6E9EF;--muted:#9BA3B4;--line:#2E3544;--accent:#B08BE0;--bad:#f07a70;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font:17px/1.5 'Atkinson Hyperlegible',system-ui,sans-serif;padding:16px}
+.box{width:100%;max-width:400px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px 24px}
+.k{font:600 12px 'JetBrains Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:Literata,Georgia,serif;font-size:28px;margin:.2em 0 .4em}
+p{color:var(--muted);margin:0 0 18px;font-size:15px}
+label{display:block;font-size:14px;color:var(--muted);margin-bottom:6px}
+input[type=password]{width:100%;font:inherit;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+input[type=password]:focus{outline:3px solid var(--accent);outline-offset:1px}
+.row{display:flex;align-items:center;gap:8px;margin:14px 0 18px;font-size:15px}
+.row input{width:20px;height:20px;accent-color:var(--accent)}
+button{width:100%;font:700 16px 'Atkinson Hyperlegible',sans-serif;padding:12px;border-radius:10px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+@media (prefers-color-scheme:dark){button{color:#12151C}}
+.err{color:var(--bad);font-size:15px;min-height:1.5em;margin-top:12px}
+</style>
+</head>
+<body>
+<form class="box" id="f" autocomplete="off">
+<div class="k">mint-interaktiv</div>
+<h1>Anmeldung</h1>
+<p>Diese Seite ist nur für Schülerinnen und Schüler der Kurse. Das Passwort bekommst du von deiner Lehrkraft.</p>
+<label for="pw">Passwort</label>
+<input id="pw" type="password" autocomplete="current-password" required autofocus>
+<label class="row"><input id="keep" type="checkbox" checked> Auf diesem Gerät angemeldet bleiben</label>
+<button type="submit" id="go">Öffnen</button>
+<div class="err" id="err" role="alert"></div>
+</form>
+<script id="payload" type="application/json">{"s": "E4lutpqOmDujcAbG/GUicA==", "i": 310000, "d": "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"}</script>
+<script>
+(function(){
+  const P=JSON.parse(document.getElementById('payload').textContent);
+  const u8=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+  const b64=b=>btoa(String.fromCharCode(...new Uint8Array(b)));
+  async function open_(k){
+    const d=u8(P.d);const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:d.slice(0,12)},k,d.slice(12));
+    const html=new TextDecoder().decode(pt);document.open();document.write(html);document.close();
+  }
+  async function stored(){
+    const r=sessionStorage.getItem('mi-key')||localStorage.getItem('mi-key');if(!r)return false;
+    try{const k=await crypto.subtle.importKey('raw',u8(r),'AES-GCM',true,['decrypt']);await open_(k);return true;}
+    catch(e){sessionStorage.removeItem('mi-key');localStorage.removeItem('mi-key');return false;}
+  }
+  document.getElementById('f').addEventListener('submit',async e=>{
+    e.preventDefault();const err=document.getElementById('err'),go=document.getElementById('go');
+    if(!window.crypto||!crypto.subtle){err.textContent='Dieser Browser unterstützt die Entschlüsselung nicht.';return;}
+    go.disabled=true;go.textContent='Prüfe …';err.textContent='';
+    try{
+      const pw=document.getElementById('pw').value.trim();
+      const base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+      const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:u8(P.s),iterations:P.i,hash:'SHA-256'},base,{name:'AES-GCM',length:256},true,['decrypt']);
+      const raw=b64(await crypto.subtle.exportKey('raw',k));const keep=document.getElementById('keep').checked;
+      await open_(k);
+      sessionStorage.setItem('mi-key',raw);if(keep)localStorage.setItem('mi-key',raw);
+    }catch(x){err.textContent='Das Passwort stimmt nicht.';go.disabled=false;go.textContent='Öffnen';}
+  });
+  if(document.readyState==='complete')stored();else window.addEventListener('load',stored);
+})();
+</script>
+</body>
+</html>

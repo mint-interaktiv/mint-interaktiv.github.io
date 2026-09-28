@@ -1,0 +1,5 @@
+# Seiten sind per <meta name="robots" content="noindex"> von Suchmaschinen ausgeschlossen.
+# Download-Dateien (PDF/Word) nicht durchsuchen:
+User-agent: *
+Disallow: /physik/*/downloads/
+Disallow: /physik/*/*/downloads/
