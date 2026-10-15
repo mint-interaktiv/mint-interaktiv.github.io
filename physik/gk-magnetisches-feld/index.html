@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mint-interaktiv · Anmeldung</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--bg:#F7F8FA;--surface:#fff;--ink:#1B2230;--muted:#5B6475;--line:#D9DDE5;--accent:#6B3FA0;--bad:#c2332b;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#12151C;--surface:#1A1F29;--ink:#E6E9EF;--muted:#9BA3B4;--line:#2E3544;--accent:#B08BE0;--bad:#f07a70;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font:17px/1.5 'Atkinson Hyperlegible',system-ui,sans-serif;padding:16px}
+.box{width:100%;max-width:400px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px 24px}
+.k{font:600 12px 'JetBrains Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:Literata,Georgia,serif;font-size:28px;margin:.2em 0 .4em}
+p{color:var(--muted);margin:0 0 18px;font-size:15px}
+label{display:block;font-size:14px;color:var(--muted);margin-bottom:6px}
+input[type=password]{width:100%;font:inherit;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+input[type=password]:focus{outline:3px solid var(--accent);outline-offset:1px}
+.row{display:flex;align-items:center;gap:8px;margin:14px 0 18px;font-size:15px}
+.row input{width:20px;height:20px;accent-color:var(--accent)}
+button{width:100%;font:700 16px 'Atkinson Hyperlegible',sans-serif;padding:12px;border-radius:10px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+@media (prefers-color-scheme:dark){button{color:#12151C}}
+.err{color:var(--bad);font-size:15px;min-height:1.5em;margin-top:12px}
+.back{display:block;margin-top:16px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<form class="box" id="f" autocomplete="off">
+<div class="k">mint-interaktiv · GK Physik</div>
+<h1>Anmeldung</h1>
+<p>Dieser Bereich ist nur für Schülerinnen und Schüler des Kurses „GK Physik“. Das Passwort bekommst du von deiner Lehrkraft.</p>
+<label for="pw">Passwort</label>
+<input id="pw" type="password" autocomplete="current-password" required autofocus>
+<label class="row"><input id="keep" type="checkbox" checked> Auf diesem Gerät angemeldet bleiben</label>
+<button type="submit" id="go">Öffnen</button>
+<div class="err" id="err" role="alert"></div>
+<a class="back" href="../../">← alle Bereiche</a>
+</form>
+<script id="payload" type="application/json">{"a": "gk", "w": [{"s": "FHiNV4lXnSaXps6jXDO/cw==", "i": 310000, "d": "HTVDjfRepWOmzUkTGDMZFYtS2d041gWapg0iR9hHzbf4GbgGhQo0MdwtfBlwj4UgdOv4qzIe5Usd+BlR"}, {"s": "GD1bv78iMBe6My8z63SfrQ==", "i": 310000, "d": "9KcdB05V0vEQRi9SD0CTWO7qJAhngc9SFn8FJsrxHgqrRQw5Rm4Ct79Y0mCIOhMySXOflTcJgxJVGbk7"}], "d": "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"}</script>
+<script>
+(function(){
+  const P=JSON.parse(document.getElementById('payload').textContent), SK='mi-key-'+P.a;
+  const u8=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+  const b64=b=>btoa(String.fromCharCode(...new Uint8Array(b)));
+  async function open_(raw){
+    const k=await crypto.subtle.importKey('raw',raw,'AES-GCM',false,['decrypt']);
+    const d=u8(P.d);const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:d.slice(0,12)},k,d.slice(12));
+    const html=new TextDecoder().decode(pt);document.open();document.write(html);document.close();
+  }
+  async function stored(){
+    const r=sessionStorage.getItem(SK)||localStorage.getItem(SK);if(!r)return false;
+    try{await open_(u8(r));return true;}
+    catch(e){sessionStorage.removeItem(SK);localStorage.removeItem(SK);return false;}
+  }
+  async function unwrap(pw){
+    const base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+    for(const w of P.w){
+      try{
+        const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:u8(w.s),iterations:w.i,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['decrypt']);
+        const d=u8(w.d);return new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:d.slice(0,12)},k,d.slice(12)));
+      }catch(e){}
+    }
+    return null;
+  }
+  document.getElementById('f').addEventListener('submit',async e=>{
+    e.preventDefault();const err=document.getElementById('err'),go=document.getElementById('go');
+    if(!window.crypto||!crypto.subtle){err.textContent='Dieser Browser unterstützt die Entschlüsselung nicht.';return;}
+    go.disabled=true;go.textContent='Prüfe …';err.textContent='';
+    const pw=document.getElementById('pw').value.trim(),keep=document.getElementById('keep').checked;
+    try{
+      const raw=await unwrap(pw);
+      if(!raw){err.textContent='Das Passwort stimmt nicht.';go.disabled=false;go.textContent='Öffnen';return;}
+      const r64=b64(raw);await open_(raw);
+      sessionStorage.setItem(SK,r64);if(keep)localStorage.setItem(SK,r64);
+    }catch(x){err.textContent='Das Passwort stimmt nicht.';go.disabled=false;go.textContent='Öffnen';}
+  });
+  if(document.readyState==='complete')stored();else window.addEventListener('load',stored);
+})();
+</script>
+</body>
+</html>
