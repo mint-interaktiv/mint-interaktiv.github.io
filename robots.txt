@@ -3,3 +3,5 @@
 User-agent: *
 Disallow: /physik/*/downloads/
 Disallow: /physik/*/*/downloads/
+Disallow: /informatik/*/downloads/
+Disallow: /informatik/*/*/downloads/
